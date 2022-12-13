@@ -49,7 +49,7 @@ a{
 }
 .img::after{
     --aqua: hsl(178, 100%, 50%,0.5);
-    content: url(nft-preview-card-component-main/images/icon-view.svg);
+    content: url(images/icon-view.svg);
     background: var(aqua);
     position: absolute;
     inset: 0;
