@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    -webkit-text-size-adjust: none;
+    text-size-adjust:none;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-family:Outfit, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    width: 100%; 
+    min-height: 100vh;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ............................................ */
+/* Nft CARD                                      */
+/* ............................................ */
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    padding: 25px;
+    border-radius: 1.35rem;
+    box-shadow: 0  20px 25px 15px rgba(0, 0, 0.05)
+                0 40x 30px 15px rgba(0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.img{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img::after{
+    --aqua: hsl(178, 100%, 50%,0.5);
+    content: url(nft-preview-card-component-main/images/icon-view.svg);
+    background: var(aqua);
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+.img:hover::after{
+    opacity: 1;;
+}
+.img img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.header-text{
+    font-weight: 600;
+}
+.price-duration{
+       display: flex;
+       flex-direction: row;
+       margin-top: 20px;
+       justify-content: space-between;
+}
+
+.price-icon{
+    justify-content: center;
+    position: relative;
+    top: 2px;
+}
+.price{
+    color: hsla(178, 100%, 50%);
+    font-weight: 400;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.days-left{
+    margin-left: 10px;
+}
+
+.container hr{
+    color: hsl(215, 32%, 27%);
+    border: none;
+    border-top: solid 1px;
+}
+
+.created-by{
+    margin-top: 20px;
+}
+
+.avatar{
+    width: 30px;
+    border: solid 2px;
+    border-radius: 100%;
+    border-color: #fff;
+    margin-right: 10px;
+}
+.creation-message{
+    position: relative;
+    bottom: 10px;
+}
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
