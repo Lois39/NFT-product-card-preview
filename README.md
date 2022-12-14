@@ -22,7 +22,7 @@ This is a solution to the frontend mentor challenge
 
 ### What I learned
 
--I have learned a lot from this challenge the process of combining an image in a hover effect
+-I have learned from this challenge the process of combining an image in a hover effect
   
 ### Author
 
